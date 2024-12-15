@@ -49,8 +49,18 @@
         <h2>Alarado</h2>
       </div>
 
-      <div class="navigation">
-        <ul>
+      <div id="navigation" class="navigation">
+        <ul class="nav">
+            <li><a href="./navigation/about.html">About us</a></li>
+            <li><a href="./navigation/product.html">Product</a></li>
+            <li><a href="./navigation/resources.html">Resource</a></li>
+            <li><a href="./navigation/contact.html">Contact</a></li>
+        </ul>
+        <ul class="side-bar">
+            <li onclick="hidesidebar()"><svg  class="cancel" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="7.16113" y="23.2176" width="22" height="3" rx="1.5" transform="rotate(-45 7.16113 23.2176)" fill="#223344"/>
+              <rect x="9.28223" y="7.66116" width="22" height="3" rx="1.5" transform="rotate(45 9.28223 7.66116)" fill="#223344"/>
+              </svg></li>
             <li><a href="./navigation/about.html">About us</a></li>
             <li><a href="./navigation/product.html">Product</a></li>
             <li><a href="./navigation/resources.html">Resource</a></li>
@@ -65,9 +75,12 @@
         </div>
       </div>
 
-      <div id="hamburger">
-        <div class="hamburger-container"><img src="./resources/hamburger-button.svg" alt="" class="hamburger-img"></div>
-      </div>
+        <a id="hamburger" onclick="event.preventDefault; showsidebar()"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="5" y="8" width="22" height="3" rx="1.5" fill="#223344"/>
+          <rect x="5" y="15" width="22" height="3" rx="1.5" fill="#223344"/>
+          <rect x="5" y="22" width="22" height="3" rx="1.5" fill="#223344"/>
+          </svg>
+          </a>
     </nav>
 
     <main class="body">
@@ -98,12 +111,7 @@
         <div class="svg-center">
             <img src="./resources/hero-image-simple-homepage.png" alt="" width="600px">
         </div>
-
-        <div class="dropdown-menu">
-          <div id="cancel">
-            <div id="cancel-container"><img src="./resources/close-button.svg" alt=""></div>
-          </div>
-
+        <!-- <div class="dropdown-menu">
           <ul>
               <li><a href="./navigation/about.html">About us</a></li>
               <li><a href="./navigation/product.html">Product</a></li>
@@ -116,7 +124,7 @@
                 <img class="Sun_fill" src="./resources/Sun_fill.svg" alt="">
             </div>
           </div>
-        </div>
+        </div> -->
     </main>
 
 
@@ -152,6 +160,6 @@
         >devChallenges.io</a
       >.
     </div> -->
-    <script src="./index.js"></script>
+    <script src="/index.js"></script>
   </body>
 </html>
