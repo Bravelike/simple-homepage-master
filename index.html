@@ -42,91 +42,117 @@
     </style>
   </head>
   <body>
-    <nav>
+    <header>
       <div class="logo">
-        <div class="logo-test"></div>
-        <div class="logo-test2"></div>
-        <h2>Alarado</h2>
+        <span></span>
+        <h1 class="text-body">Alarado</h1>
       </div>
-
-      <div id="navigation" class="navigation">
-        <ul class="nav">
-            <li><a href="./navigation/about.html">About us</a></li>
-            <li><a href="./navigation/product.html">Product</a></li>
-            <li><a href="./navigation/resources.html">Resource</a></li>
-            <li><a href="./navigation/contact.html">Contact</a></li>
+      <nav>
+        <ul class="nav-ul">
+            <li><a href="" class="text-sm">About us</a></li>
+            <li><a href="" class="text-sm">Product</a></li>
+            <li><a href="" class="text-sm">Resource</a></li>
+            <li><a href="" class="text-sm">Contact</a></li>
         </ul>
-        <ul class="side-bar">
-            <li onclick="hidesidebar()"><svg  class="cancel" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="7.16113" y="23.2176" width="22" height="3" rx="1.5" transform="rotate(-45 7.16113 23.2176)" fill="#223344"/>
-              <rect x="9.28223" y="7.66116" width="22" height="3" rx="1.5" transform="rotate(45 9.28223 7.66116)" fill="#223344"/>
-              </svg></li>
-            <li><a href="./navigation/about.html">About us</a></li>
-            <li><a href="./navigation/product.html">Product</a></li>
-            <li><a href="./navigation/resources.html">Resource</a></li>
-            <li><a href="./navigation/contact.html">Contact</a></li>
-        </ul>
+    </nav>
+    <div class="theme-toggle">
+      <div class="moon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M15 4C15.292 4 15.438 4 15.5781 4.04183C16.192 4.22522 16.4775 4.93111 16.1637 5.48976C16.0921 5.61719 15.8744 5.82779 15.4389 6.249C13.935 7.70352 13 9.74257 13 12C13 14.2574 13.935 16.2965 15.4389 17.751C15.8744 18.1722 16.0921 18.3828 16.1637 18.5102C16.4775 19.0689 16.192 19.7748 15.5781 19.9582C15.438 20 15.292 20 15 20V20C10.5817 20 7 16.4183 7 12C7 7.58172 10.5817 4 15 4V4Z" fill="#F2F9FE"/>
+        </svg>
       </div>
-
-      <div class="switch">
-        <div class="switch-container">
-            <img class="Moon_fill_light" src="./resources/Moon_fill_light.svg" alt="">
-            <img class="Sun_fill" src="./resources/Sun_fill.svg" alt="">
-        </div>
+      <div class="sun">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="4" fill="#223344"/>
+            <path d="M12 5V3" stroke="#223344" stroke-width="2" stroke-linecap="round"/>
+            <path d="M12 21V19" stroke="#223344" stroke-width="2" stroke-linecap="round"/>
+            <path d="M16.95 7.04996L18.3643 5.63574" stroke="#223344" stroke-width="2" stroke-linecap="round"/>
+            <path d="M5.63608 18.3644L7.05029 16.9502" stroke="#223344" stroke-width="2" stroke-linecap="round"/>
+            <path d="M19 12L21 12" stroke="#223344" stroke-width="2" stroke-linecap="round"/>
+            <path d="M3 12L5 12" stroke="#223344" stroke-width="2" stroke-linecap="round"/>
+            <path d="M16.95 16.95L18.3643 18.3643" stroke="#223344" stroke-width="2" stroke-linecap="round"/>
+            <path d="M5.63608 5.63559L7.05029 7.0498" stroke="#223344" stroke-width="2" stroke-linecap="round"/>
+            </svg>
       </div>
-
-        <a id="hamburger" onclick="showsidebar()"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+    </div>
+    <div class="hamburger"  onclick="showsidebar()">
+      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect x="5" y="8" width="22" height="3" rx="1.5" fill="#223344"/>
           <rect x="5" y="15" width="22" height="3" rx="1.5" fill="#223344"/>
           <rect x="5" y="22" width="22" height="3" rx="1.5" fill="#223344"/>
           </svg>
-          </a>
-    </nav>
+    </div>
+      <div class="mobile-view">
+        <div class="cancel" onclick="hidesidebar()">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="7.16113" y="23.2176" width="22" height="3" rx="1.5" transform="rotate(-45 7.16113 23.2176)" fill="#223344"/>
+                <rect x="9.28223" y="7.66116" width="22" height="3" rx="1.5" transform="rotate(45 9.28223 7.66116)" fill="#223344"/>
+                </svg>
+          </div>
+          <ul class="new-ul">
+            <li><a href="">About us</a></li>
+            <li><a href="">Product</a></li>
+            <li><a href="">Resource</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
 
-    <main class="body">
-        <div class="text-center">
-            <div class="body-text">
-                <p class="top">😎 Simple way to communicate</p>
-                <h1>Actions for Accessibility in Design</h1>
-                <p class="bottom">The fastest way to build and deploy websites with resusable components.</p>
+          <div class="theme-toggle">
+            <div class="moon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M15 4C15.292 4 15.438 4 15.5781 4.04183C16.192 4.22522 16.4775 4.93111 16.1637 5.48976C16.0921 5.61719 15.8744 5.82779 15.4389 6.249C13.935 7.70352 13 9.74257 13 12C13 14.2574 13.935 16.2965 15.4389 17.751C15.8744 18.1722 16.0921 18.3828 16.1637 18.5102C16.4775 19.0689 16.192 19.7748 15.5781 19.9582C15.438 20 15.292 20 15 20V20C10.5817 20 7 16.4183 7 12C7 7.58172 10.5817 4 15 4V4Z" fill="#F2F9FE"/>
+              </svg>
+            </div>
+            <div class="sun">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="12" cy="12" r="4" fill="#223344"/>
+                  <path d="M12 5V3" stroke="#223344" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M12 21V19" stroke="#223344" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M16.95 7.04996L18.3643 5.63574" stroke="#223344" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M5.63608 18.3644L7.05029 16.9502" stroke="#223344" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M19 12L21 12" stroke="#223344" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M3 12L5 12" stroke="#223344" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M16.95 16.95L18.3643 18.3643" stroke="#223344" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M5.63608 5.63559L7.05029 7.0498" stroke="#223344" stroke-width="2" stroke-linecap="round"/>
+                  </svg>
+            </div>
+          </div>
+      </div>
+    </header>
+
+    <section class="main">
+        <div class="text-content">
+            <div class="heading">
+                <p class="top text-sm">😎 Simple way to communicate</p>
+                <h1 class="text-xxl">Actions for Accessibility in Design</h1>
+                <p class="text-sm">The fastest way to build and deploy websites with resusable components.</p>
             </div>
             <div class="buttons">
-                <button>Get Started</button>
-                <p><a href="./navigation/product.html">Get live demo</a></p>
+                <div class="blue-btn">
+                    <button class="text-button">Get Started</button>
+                </div>
+                <div class="cta">
+                    <a href="" class="text-button">Get live demo</a>
+                </div>
             </div>
             <div class="check">
                 <div class="benefit">
-                  <div class="benefit-icon"><img src="./resources/Done_ring_round_fill.svg" alt="">
-                  </div>
-                  <p>No credit card required</p>
+                    <div class="benefit-icon"><svg class="benefit-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 21C16.9706 21 21 16.9706 21 12C21 10.1666 20.4518 8.46124 19.5103 7.03891L12.355 14.9893C11.6624 15.7589 10.4968 15.8726 9.66844 15.2513L6.4 12.8C5.95817 12.4686 5.86863 11.8418 6.2 11.4C6.53137 10.9582 7.15817 10.8686 7.6 11.2L10.8684 13.6513L18.214 5.48955C16.5986 3.94717 14.4099 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" fill="#4CA154"/>
+                        </svg>
+                    </div>
+                    <p class="benefit-text">No credit card required</p>
                 </div>
                 <div class="benefit">
-                  <div class="benefit-icon"><img src="./resources/Done_ring_round_fill.svg" alt="">
-                  </div>
-                  <p>No software to install</p>
+                    <div class="benefit-icon"><svg class="benefit-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 21C16.9706 21 21 16.9706 21 12C21 10.1666 20.4518 8.46124 19.5103 7.03891L12.355 14.9893C11.6624 15.7589 10.4968 15.8726 9.66844 15.2513L6.4 12.8C5.95817 12.4686 5.86863 11.8418 6.2 11.4C6.53137 10.9582 7.15817 10.8686 7.6 11.2L10.8684 13.6513L18.214 5.48955C16.5986 3.94717 14.4099 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" fill="#4CA154"/>
+                        </svg>
+                    </div>
+                    <p class="benefit-text">No software to install</p>
                 </div>
             </div>
         </div>
-
-        <div class="svg-center">
-            <img src="./resources/hero-image-simple-homepage.png" alt="" width="600px">
+        <div class="hero-image">
+            <img src="./resources/hero-image-simple-homepage.png" alt="Image of a man coding in space" class="image">
         </div>
-        <!-- <div class="dropdown-menu">
-          <ul>
-              <li><a href="./navigation/about.html">About us</a></li>
-              <li><a href="./navigation/product.html">Product</a></li>
-              <li><a href="./navigation/resources.html">Resource</a></li>
-              <li><a href="./navigation/contact.html">Contact</a></li>
-          </ul>
-          <div class="switch">
-            <div class="switch-container">
-                <img class="Moon_fill_light" src="./resources/Moon_fill_light.svg" alt="">
-                <img class="Sun_fill" src="./resources/Sun_fill.svg" alt="">
-            </div>
-          </div>
-        </div> -->
-    </main>
-
+    </section>
 
 
     <!-- 
