@@ -141,6 +141,32 @@
   .mobile-view a {
     font-size: 2.5rem;
 }
+
+.mobile-view .mobile-toggle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 60px;
+  height: 28px;
+  justify-content: space-between;
+  background-color: var(--dark-bg-color);
+  border-radius: 14px;
+  padding: 2px 5px;
+  position: relative;
+  cursor: pointer;
+}
+
+.mobile-view .moon {
+  display: flex;
+  align-items: center;
+}
+.mobile-view .sun {
+  display: flex;
+  align-items: center;
+  background-color: var(--light-bg-color);
+  border-radius: 50%;
+}
+
 .mobile-view li:nth-child(1) {
     margin-top: 6rem;
 }
@@ -235,6 +261,54 @@
     height: 100%;
 }
 
+/* General dark mode styles */
+body.dark-mode {
+  background-color: #111729;
+  color: #f1f1f1;
+}
+
+body.dark-mode .mobile-view {
+  background-color: #223344;
+  color: #f1f1f1;
+}
+
+body.dark-mode .mobile-view .new-ul li a {
+  color: #f1f1f1;
+}
+
+/* Buttons */
+body.dark-mode .blue-btn button {
+  background-color: #4a90e2;
+  color: #ffffff;
+}
+
+body.dark-mode .cta a {
+  color: #4a90e2;
+}
+
+/* Navigation links */
+body.dark-mode nav ul li a {
+  color: #ffffff;
+}
+body.dark-mode h1 {
+  color: #f1f1f1;
+}
+
+/* Icons (e.g., SVGs) */
+  body.dark-mode .theme-toggle {  
+    background-color: #223344;
+  } 
+
+body.dark-mode .hamburger svg rect{
+  fill: white;
+}
+body.dark-mode .cancel svg rect{
+  fill: white;
+}
+body.dark-mode .sun svg {
+  display: inline;
+}
+
 
   @media (max-width:660px) {
     body {
@@ -246,6 +320,10 @@
 
     .hamburger {
         display: block;
+    }
+
+    .mobile-view .theme-toggle {
+      display: block;
     }
 
     .main {
